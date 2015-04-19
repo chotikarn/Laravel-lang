@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -13,7 +13,7 @@ return array(
     |
     */
 
-    'previous' => '&laquo; 往前',
+    'previous' => '&laquo; 上一页',
 
-    'next'     => '往后 &raquo;',
-);
+    'next'     => '下一页 &raquo;',
+];

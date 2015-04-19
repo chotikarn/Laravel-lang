@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -21,51 +21,56 @@ return array(
     "alpha_num"        => ":attribute voi vain sisältää kirjaimia ja numeroita.",
     "array"            => "The :attribute must be an array.",
     "before"           => ":attribute pitää olla päiväys ennen :date.",
-    "between"          => array(
+    "between"          => [
         "numeric" => ":attribute numeron pitää olla välillä :min - :max.",
         "file"    => ":attribute tiedoston pitää olla välillä :min - :max kilobittiä.",
         "string"  => ":attribute elementin pitää olla välillä :min - :max kirjainta.",
-        "array"   => "The :attribute must have between :min - :max items."
-    ),
+        "array"   => "The :attribute must have between :min - :max items.",
+    ],
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => ":attribute vahvistus ei täsmää.",
-    "date"             => "The :attribute is not a valid date.",
-    "date_format"      => "The :attribute does not match the format :format.",
+    "date"             => ":attribute ei ole kelvollinen päivämäärä.",
+    "date_format"      => ":attribute ei vastaa muotoa :format.",
     "different"        => ":attribute ja :other tulee olla eri arvoisia.",
-    "digits"           => "The :attribute must be :digits digits.",
+    "digits"           => ":attribute on oltava :digits numeroin.",
     "digits_between"   => "The :attribute must be between :min and :max digits.",
     "email"            => ":attribute muoto on virheellinen.",
     "exists"           => "valittu :attribute on virheellinen.",
+    "filled"           => ":attribute kenttä on pakollinen.",
     "image"            => ":attribute pitää olla kuva.",
     "in"               => "valittu :attribute on virheellinen.",
     "integer"          => ":attribute pitää olla numero.",
     "ip"               => ":attribute pitää olla validi IP-osoite.",
-    "max"              => array(
+    "max"              => [
         "numeric" => ":attribute pitää olla pienempi kuin :max.",
         "file"    => ":attribute pitää olla pienempi :max kilobittiä.",
         "string"  => ":attribute pitää olla pienempi :max kirjainta.",
-        "array"   => "The :attribute may not have more than :max items."
-    ),
+        "array"   => "The :attribute may not have more than :max items.",
+    ],
     "mimes"            => ":attribute pitää olla tiedostotyyppi: :values.",
-    "min"              => array(
+    "min"              => [
         "numeric" => ":attribute pitää olla vähintään :min.",
         "file"    => ":attribute pitää olla vähintään :min kilobittiä.",
         "string"  => ":attribute pitää olla vähintään :min kirjainta.",
-        "array"   => "The :attribute must have at least :min items."
-    ),
+        "array"   => "The :attribute must have at least :min items.",
+    ],
     "not_in"           => "valittu :attribute on virheellinen.",
     "numeric"          => ":attribute pitää olla numero.",
     "regex"            => "The :attribute format is invalid.",
     "required"         => ":attribute kenttä on pakollinen.",
     "required_if"      => "The :attribute field is required when :other is :value.",
     "required_with"    => "The :attribute field is required when :values is present.",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => "The :attribute field is required when :values is not present.",
+    "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => ":attribute ja :other on oltava samat.",
-    "size"             => array(
+    "size"             => [
         "numeric" => ":attribute pitää olla kokoa: :size.",
         "file"    => ":attribute pitää olla kokoa: :size kilobittiä.",
         "string"  => ":attribute pitää olla kokoa: :size kirjainta.",
-        "array"   => "The :attribute must contain :size items."
-    ),
+        "array"   => "The :attribute must contain :size items.",
+    ],
+    "timezone"         => "The :attribute must be a valid zone.",
     "unique"           => ":attribute on jo valittu.",
     "url"              => ":attribute URL-osoite on virheellinen.",
 
@@ -80,7 +85,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => [
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -93,5 +102,5 @@ return array(
     |
     */
 
-    'attributes' => array(),
-);
+    'attributes' => [],
+];
